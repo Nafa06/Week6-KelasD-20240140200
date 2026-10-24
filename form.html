@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Caption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Products</a>
+    <a href="form.html" class="active">Caption Generator</a>
+  </nav>
+
+  <header>
+    <h1>Marketing Caption</h1>
+    <p>Generate quick marketing copy for your products.</p>
+  </header>
+
+  <main class="form-container">
+    <form id="marketingForm" novalidate>
+      <div class="input-group">
+        <label for="productName">Product Name</label>
+        <input type="text" id="productName" placeholder="e.g. Mechanical Keyboard">
+        <span class="error-msg" id="productName-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label for="price">Price (IDR)</label>
+        <input type="number" id="price" placeholder="e.g. 1500000">
+        <span class="error-msg" id="price-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label for="tone">Tone</label>
+        <select id="tone">
+          <option value="hype">Hype / Promo</option>
+          <option value="casual">Casual / Friendly</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Generate Caption</button>
+
+      <div class="input-group" style="margin-top: 20px;">
+        <label for="output">Result</label>
+        <textarea id="output" rows="10" readonly placeholder="Your generated caption will appear here..."></textarea>
+      </div>
+    </form>
+  </main>
+
+  <script src="form-handler.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Etalase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="active">Products</a>
+    <a href="form.html">Caption Generator</a>
+  </nav>
+
+  <header>
+    <h1>Shop</h1>
+    <p>Discover various products.</p>
+  </header>
+
+  <main>
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <select id="categorySelect">
+        <option value="">All Categories</option>
+      </select>
+    </div>
+
+    <div id="status" class="status-msg">Loading products...</div>
+    <div class="grid" id="productGrid"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
